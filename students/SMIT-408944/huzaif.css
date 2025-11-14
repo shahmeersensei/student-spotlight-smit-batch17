@@ -1,0 +1,152 @@
+:root{
+    --foreground-color-- : #e61700;
+    --background-color--: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body{
+    background-color: black;
+}
+
+/* navigation bar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3vw;
+
+}
+
+.logo{
+    color: var(--foreground-color--);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.navlinks{
+    list-style-type:none;
+    display: flex;
+    gap: 2vw;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: gray;
+    transition: all 0.5s ;
+}
+.navlinks a:hover{
+    color: var(--foreground-color--);
+}
+
+.orange-btn{
+    padding:8px 25px;
+    border: none;
+    background: linear-gradient(to right, #FA6E00, #e51336);
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.nav-btns{
+    display: flex;
+    gap: 20px;
+}
+
+
+.menu{
+    background-color: transparent;
+    border: none;
+    color: #FA6E00;
+    font-size: 22px;
+    font-weight: 600;
+    display: none;
+}
+
+
+
+/* hero dection */
+
+.hero-sec{
+    color: var(--foreground-color--);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+}
+
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-text h1{
+    font-size: 50px;
+}
+.hero-text p{
+    color: gray;
+}
+
+
+.hero-image{
+    width: 350px;
+    border-radius: 10px;
+    
+}
+
+.hero-btn{
+    background-color: transparent ;
+    border: 2px solid white;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+
+/* about section */
+.about{
+    color: var(--foreground-color--);
+
+}
+
+.about-sec{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-image{
+     width: 350px;
+    border-radius: 10px;
+}
+
+
+/* .about-img{
+    width: 50%;
+} */
+.about-text{
+    color: gray;
+    width: 50%;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navlinks{
+    display: none;
+}
+
+
+.menu{
+    display: block;
+}
+}
